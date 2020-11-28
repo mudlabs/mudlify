@@ -1,0 +1,6 @@
+components: components
+cms:
+  path: .cms
+  associations:
+      - from: .yaml
+        to: .html
