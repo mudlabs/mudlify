@@ -36,7 +36,7 @@ module.exports = {
     exclude: [ ".fallback.html" ],
     buildOptions: {
       htmlFragments: true,
-      metaDir: ".snowpack",
+      metaUrlPath: ".snowpack",
       out: ".build",
       baseUrl: "/",
       clean: true
