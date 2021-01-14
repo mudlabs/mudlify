@@ -5,34 +5,37 @@
 module.exports = {
     mount: {
       ".cms": "/",
-      "app/public": "/",
-      "app/assets": "/assets",
-      ".cms/media": "/assets/media",
+      public: "/",
       admin: "/admin",
+      assets: "/assets",
+      ".cms/media": "/assets/media",
     },
     devOptions: {
       fallback: ".fallback.html"
     },
     plugins: [
-      // [ "mudlify-snowpack-plugin", { config: "mudlify.yaml" } ]
-      [ 
-        "@snowpack/plugin-babel", 
-        { 
-          input: [".js"],
-          transformOptions: {
-            presets: [[
-              "@babel/preset-env",
-              {
-                targets: "last 2 versions, not ie < 10, > 0%"
-              }
-            ]]
-          } 
-        }
-      ],
-      "@snowpack/plugin-optimize"
+      [ "@mudlabs/mudlify-snowpack-plugin", { config: "mudlify.yaml" } ]
+      // [ 
+      //   "@snowpack/plugin-babel", 
+      //   { 
+      //     input: [".js"],
+      //     transformOptions: {
+      //       presets: [
+      //         [
+      //           "@babel/preset-env",
+      //           {
+      //             targets: "last 2 versions, > 0.25%, not dead"
+      //           }
+      //         ]
+      //       ]
+      //     } 
+      //   }
+      // ],
+      // "@snowpack/plugin-optimize"
     ],
     exclude: [ ".fallback.html" ],
     buildOptions: {
+      htmlFragments: true,
       metaDir: ".snowpack",
       out: ".build",
       baseUrl: "/",

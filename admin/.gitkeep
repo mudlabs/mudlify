@@ -1,0 +1,7 @@
+Put your Netlify CMS config.yaml file here. And the index.html file that will redirect 
+your sites admin to the CMS portal. The html file should include the Netlify script as
+shown below, in the <head> tag. Though the actual url may have changed since this was
+written. Check the Netlify CMS docs for detail, including how to structure your 
+config file.
+
+- <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js" defer></script>

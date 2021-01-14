@@ -1,3 +1,5 @@
+
+
 let log = document.createTextNode('?');   // let log = new Text('?');
 
 function pause(time) {
@@ -11,6 +13,7 @@ async function logButtons(e) {
   if (e.buttons === 2) {
       const after = await pause(2000);
       console.log(after);
+      console.log(regeneratorRuntime.mark)
   } else {
       console.log("Not right click")
   }
@@ -21,3 +24,5 @@ document.addEventListener('mousedown', logButtons);
 // document.addEventListener('mousemove', logButtons);
 
 document.querySelector('#log').appendChild(log)
+
+export default log

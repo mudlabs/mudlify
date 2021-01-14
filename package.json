@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "snowpack dev",
-    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
+    "premium": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "snowpack build --reload"
   },
   "repository": {
@@ -18,17 +18,12 @@
     "url": "https://gitlab.com/mudlify/mudlify/issues"
   },
   "homepage": "https://gitlab.com/mudlify/mudlify#readme",
+  "browserslist": "last 2 versions, > 0.25%, not dead",
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@babel/preset-env": "^7.12.7",
-    "@snowpack/plugin-babel": "^2.1.4",
+    "@mudlabs/mudlify-snowpack-plugin": "^0.1.0",
+    "@snowpack/plugin-babel": "^2.1.5",
     "@snowpack/plugin-optimize": "^0.2.9",
-    "pnpm": "^5.13.4",
+    "pnpm": "^5.13.5",
     "snowpack": "^2.17.1"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "not ie < 10",
-    "> 0%"
-  ]
+  }
 }
