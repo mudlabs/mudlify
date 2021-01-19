@@ -2,7 +2,6 @@
 # deploy setting, and environment variables, you can also configure
 # these settings here.
 [build.environment]
-    PNPM_VERSION = "5.13.4"
     NPM_VERSION = "7.0.3"
     
 [build]
