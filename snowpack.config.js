@@ -14,7 +14,7 @@ module.exports = {
       fallback: ".fallback.html"
     },
     plugins: [
-      [ "@mudlabs/mudlify-snowpack-plugin", { config: "mudlify.yaml" } ]
+      [ "@mudlabs/mudlify-snowpack-plugin", { config: "mudlify.yaml" } ],
       // [ 
       //   "@snowpack/plugin-babel", 
       //   { 
@@ -31,7 +31,7 @@ module.exports = {
       //     } 
       //   }
       // ],
-      // "@snowpack/plugin-optimize"
+      "@snowpack/plugin-optimize"
     ],
     exclude: [ ".fallback.html" ],
     buildOptions: {
