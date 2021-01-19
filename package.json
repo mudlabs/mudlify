@@ -5,19 +5,18 @@
   "private": true,
   "scripts": {
     "dev": "snowpack dev",
-    "premium": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "snowpack build --reload"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/mudlify/mudlify.git"
+    "url": "git+https://github.com/mudlabs/mudlify.git"
   },
   "author": "Mudlabs",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/mudlify/mudlify/issues"
+    "url": "https://github.com/mudlabs/mudlify/issues"
   },
-  "homepage": "https://gitlab.com/mudlify/mudlify#readme",
+  "homepage": "https://github.com/mudlabs/mudlify#readme",
   "browserslist": "last 2 versions, > 0.25%, not dead",
   "devDependencies": {
     "@mudlabs/mudlify-snowpack-plugin": "^0.1.0",
