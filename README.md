@@ -4,8 +4,9 @@
 
 ## Usage
 `npx degit github:mudlabs/mudlify#master <folder-name>`
+- `npm install` to initiat package dependencies.
 - `npm run dev` to fire up the dev build.
-- `npm run build` to distribute the public build _(e.g. for Netlify)_
+- `npm run build` to distribute the public build _(e.g. for Netlify)_.
 
 
 ## Developing Your Site
