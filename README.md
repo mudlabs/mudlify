@@ -3,10 +3,9 @@
 # Mudlify
 
 ## Usage
-1. Clone this repo
-2. Execute `npm install`.
-3. Execute `npm run dev` to fire up the dev build.
-    - `npm run build` to distribute the public build _(e.g. for Netlify)_
+`npx degit github:mudlabs/mudlify#master <folder-name>`
+- `npm run dev` to fire up the dev build.
+- `npm run build` to distribute the public build _(e.g. for Netlify)_
 
 
 ## Developing Your Site
