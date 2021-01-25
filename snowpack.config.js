@@ -18,7 +18,7 @@ module.exports = {
         "@mudlabs/mudlify-snowpack-plugin", 
         { config: "mudlify.yaml" } 
       ],
-      "@snowpack/plugin-optimize"
+      // "@snowpack/plugin-optimize"
     ],
     exclude: [ ".fallback.html" ],
     buildOptions: {

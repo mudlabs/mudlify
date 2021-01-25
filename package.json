@@ -18,7 +18,7 @@
   "homepage": "https://github.com/mudlabs/mudlify#readme",
   "browserslist": "last 2 versions, > 0.25%, not dead",
   "devDependencies": {
-    "@mudlabs/mudlify-snowpack-plugin": "^0.1.0",
+    "@mudlabs/mudlify-snowpack-plugin": "^0.1.2",
     "@snowpack/plugin-optimize": "^0.2.9",
     "snowpack": "^3.0.7"
   },
