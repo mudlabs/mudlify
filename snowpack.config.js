@@ -37,7 +37,7 @@ module.exports = {
     buildOptions: {
       htmlFragments: true,
       metaUrlPath: ".snowpack",
-      out: ".build",
+      out: ".dist",
       baseUrl: "/",
       clean: true
     },

@@ -2,7 +2,7 @@
 # deploy setting, and environment variables, you can also configure
 # these settings here.
 [build]
-    publish = ".build"
+    publish = ".dist"
     command = "npm run build"
 
 [build.environment]
