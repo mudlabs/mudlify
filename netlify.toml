@@ -1,11 +1,11 @@
 # In addition to using the Netlify UI to configure build settings,
 # deploy setting, and environment variables, you can also configure
 # these settings here.
-[build.environment]
-    NPM_VERSION = "7.0.3"
-    
 [build]
     publish = ".build"
     command = "npm run build"
+
+[build.environment]
+    NPM_FLAGS = "--prefix=/dev/null"
 
 [context.development]
