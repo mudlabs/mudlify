@@ -14,23 +14,10 @@ module.exports = {
       fallback: ".fallback.html"
     },
     plugins: [
-      [ "@mudlabs/mudlify-snowpack-plugin", { config: "mudlify.yaml" } ],
-      // [ 
-      //   "@snowpack/plugin-babel", 
-      //   { 
-      //     input: [".js"],
-      //     transformOptions: {
-      //       presets: [
-      //         [
-      //           "@babel/preset-env",
-      //           {
-      //             targets: "last 2 versions, > 0.25%, not dead"
-      //           }
-      //         ]
-      //       ]
-      //     } 
-      //   }
-      // ],
+      [ 
+        "@mudlabs/mudlify-snowpack-plugin", 
+        { config: "mudlify.yaml" } 
+      ],
       "@snowpack/plugin-optimize"
     ],
     exclude: [ ".fallback.html" ],

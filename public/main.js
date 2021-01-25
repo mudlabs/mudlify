@@ -1,28 +1,16 @@
+import color from "color-name";
 
+function Wait(time) {
+    return new Promise(resolve => {
+        setTimeout(() => resolve(), time)
+    });
+};
 
-let log = document.createTextNode('?');   // let log = new Text('?');
+async function Hi() {
+    const pending = await Wait(2000);
+    console.log("Welcome to Mudlify. Here's the RGB value for blueviolet.", color.blueviolet);
+};
 
-function pause(time) {
-    return new Promise(res => {
-        setTimeout(() => res("Was right click"), time);
-    })
-}
-
-async function logButtons(e) {
-  log.data = `${e.buttons} (${e.type})`;  // log.nodeValue= `${e.buttons} (${e.type})`;
-  if (e.buttons === 2) {
-      const after = await pause(2000);
-      console.log(after);
-      console.log(regeneratorRuntime.mark)
-  } else {
-      console.log("Not right click")
-  }
-}
-
-document.addEventListener('mouseup', logButtons);
-document.addEventListener('mousedown', logButtons);
-// document.addEventListener('mousemove', logButtons);
-
-document.querySelector('#log').appendChild(log)
-
-export default log
+Hi()
+.then(() => console.log("Done"))
+.catch((e) => console.error(e));

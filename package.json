@@ -19,7 +19,6 @@
   "browserslist": "last 2 versions, > 0.25%, not dead",
   "devDependencies": {
     "@mudlabs/mudlify-snowpack-plugin": "^0.1.0",
-    "@snowpack/plugin-babel": "^2.1.5",
     "@snowpack/plugin-optimize": "^0.2.9",
     "snowpack": "^3.0.7"
   }
