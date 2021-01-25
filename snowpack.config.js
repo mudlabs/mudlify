@@ -23,7 +23,7 @@ module.exports = {
     exclude: [ ".fallback.html" ],
     buildOptions: {
       htmlFragments: true,
-      metaUrlPath: ".snowpack",
+      metaUrlPath: "snowpack",
       out: ".dist",
       baseUrl: "/",
       clean: true
