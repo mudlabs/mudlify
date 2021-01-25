@@ -2,10 +2,9 @@
   "name": "mudlify",
   "version": "1.0.0",
   "description": "Template for building Netlify CMS apps",
-  "private": true,
   "scripts": {
     "dev": "snowpack dev",
-    "build": "snowpack build --reload"
+    "build": "snowpack build"
   },
   "repository": {
     "type": "git",
