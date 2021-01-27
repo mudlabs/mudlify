@@ -1,0 +1,6 @@
+clean: true
+init: true
+issue: 1
+install: []
+uninstall: []
+update: []
